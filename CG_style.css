@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: linear-gradient(to right, #141e30, #105bb1);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00f2ff;
+}
+.icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    gap: 1.5rem; /* Adjust the gap between the icons */
+    margin-top: 20px; /* Add some margin at the top */
+}
+
+.icons a {
+    color: #bbb; /* Adjust the initial color of the icons */
+    font-size: 2rem; /* Adjust the size of the icons */
+    transition: color 0.3s; /* Add transition for hover effect */
+}
+
+.icons a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home {
+    background-image: url('path/to/your/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+}
+
+#home h1 {
+    font-size: 3em;
+    color: #f2f2f2;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: calc(33.333% - 40px); /* 3 boxes per row with 20px gap */
+    box-sizing: border-box;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.box:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-10px);
+}
+
+.box img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.box h3 {
+    margin-top: 10px;
+}
+.box a {
+    color: #57c7e6; /* Customize this color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.box a:hover {
+    color: 57c7e6; /* Customize this color for hover effect */
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+footer {
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    text-align: center;
+    padding: 20px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Container styling for the contact section */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Label styling */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffffff; /* Customize label color */
+}
+
+/* Input and textarea styling */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff; /* Customize text color */
+}
+
+/* Input and textarea focus state */
+form input:focus, form textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Button styling */
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Customize gradient */
+    color: #fff; /* Customize button text color */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Button hover state */
+form button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* Customize hover gradient */
+}
