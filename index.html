@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhysiML Invos</title>
-    <link rel="stylesheet" href="CG_style.css">
+    <title>PhysML Invos</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
+
+
 <body>
     <header>
         <nav>
@@ -21,89 +22,195 @@
             </ul> 
         </nav>
     </header>
-
-    <section id="home">
-        <h1 style="color: aqua;">Welcome to PhysiML Invos</h1>
-        <p>Hi, I'm <span>Hasham Akram</span>, a Data Scientist and ML Engineer.</p><br>
-        <img src="image\Screenshot_2024-03-16_162926-removebg-preview (1).png" alt="Hero Image">
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm Hasham Akram, a Data Scientist with a strong background in Python, Al, Machine Learning, and Predictive Modeling.<br/> I have a Bachelor's degree in Physics and Data Science. My work experience includes internships and apprenticeships in<br/> science, where I have successfully applied my skills to solve real-world problems.Additionally, My future goals include<br/>leveraging my expertise in data science, machine learning and deep learning to drive innovation and actionable insights<br/>in astrophysical and celestial realm, while continuously expanding my skill set and contributing to impactful projects.
-        </p>
-        <div class="icons">
-            <a href="https://www.facebook.com/hasham.khan.75641/" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/hasham-akram-32a1701a7/" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://twitter.com/yourprofile" target="_blank">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="https://codepen.io/yourprofile" target="_blank">
-                <i class="fa-brands fa-codepen"></i>
-            </a>
-            <a href="https://github.com/HashamAkram18" target="_blank">
-                <i class="fa-brands fa-github" aria-hidden="true"></i>
-            </a>
+    
+    <section>
+        <div class="container-left">
+            <section id="home">
+                <h1 style="color: aqua;">PhyML Invos</h1><br>
+                <h2>Hi, I'm <strong><span style="color: aqua;">Hasham Akram</span></strong>, a Data Scientist and ML Engineer.</h2>
+            </section>
+        </div>
+        
+        <div class="container-right">
+            <section id="home">
+                <img src="image\Screenshot_2024-03-16_162926-removebg-preview (1).png" alt="Hero Image" class="circular-image">
+    
+            </section>
+            <!-- Add content for the right container here -->
         </div>
     </section>
     
+
+
+
+    <section id="about">
+        <div class="flex-container">
+            <div class="flex-item">
+                <h2>About Me</h2>
+                <br />
+                <p style="font-size: 1.2em; line-height: 1.5; color: #114a57; font-weight: 500;">
+                    Hi, I'm a Data Scientist and Machine Learning Engineer with a strong foundation in Physics and Data Science. My work experience<br />
+                    includes internships and apprenticeships in science, where I have successfully applied my skills to solve real-world problems.<br />
+                    My passion lies in exploring the connections between physics and AI, developing innovative models and solutions. Additionally,<br />
+                    My future goals include leveraging my expertise in data science, machine learning, and deep learning to drive innovation and <br/>
+                    actionable insights in the astrophysical and celestial realm, while continuously expanding my skill set and contributing to <br/>
+                    impactful projects. I enjoy sharing my knowledge through my blog and collaborative projects, engaging with others who share my<br/>
+                    passion for science and technology.
+                </p>
+                <br/>
+                <h3>Feel free to connect</h3>
+
+                <div class="icons">
+                    <a href="https://www.facebook.com/hasham.khan.75641/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hasham-akram-32a1701a7/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/yourprofile" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://codepen.io/yourprofile" target="_blank">
+                        <i class="fa-brands fa-codepen"></i>
+                    </a>
+                    <a href="https://github.com/HashamAkram18" target="_blank">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>    
+            </div>
+        </div>
+    </section>
     
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="icons">
+            <a href="resume.html" target="_blank">
+                <a href="image\Hasham Akram Resume L_Aug22.pdf" target="_blank">
+                    <i class="fas fa-file-alt"></i> View 
+                </a>
+            </a>
+        </div>
+    </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="box-container">
+                        <!-- 1st -->
+
+            <div class="box">
+                <h3>Translation App Using Seq2Seq Attention PyTorch Model</h3>
+                <p>an English-to-Urdu translation application built using a Sequence-to-Sequence (Seq2Seq) model with Gated Recurrent Units (GRU) and Bahdanau Attention mechanism.</p>
+                <br />
+                <a href="https://github.com/HashamAkram18/CODXO_Translation_App_Using_Seq2Seq_Attention_PyTorchModel" target="_blank" class="view-all-button">View on GitHub</a>
+            </div>
+                        <!-- 2nd -->
+
+            <div class="box">
+                <h3>Next Word Prediction Model</h3>
+                <p>This project aims to develop a Next Word Prediction Model using stacked Bidirectiona LSTMs and GRU to enhance text input efficiency and user experience.</p>
+                <br />
+                <a href="https://github.com/HashamAkram18/next_word_perdiction_model" target="_blank" class="view-all-button">View on GitHub</a>
+            </div>
+                        <!-- 3rd -->
+
+            <div class="box">
+                <h3>Wheat Crop Detection using RCNN</h3>
+                <p>This project implements a Region-based Convolutional Neural Network (RCNN) model for detecting wheat crops in images. The model is designed to assist in agricultural monitoring, enabling farmers and researchers to assess crop health and density efficiently.</p>
+                <br />
+                <a href="https://github.com/HashamAkram18/CODXO_Object_Detection_System_Using_Fast_RCNN" target="_blank" class="view-all-button">View on GitHub</a>
+            </div>
+                        <!-- 4th -->
+            <div class="box">
+                <h3>Fake News Detection System</h3>
+                <p>Developed a machine learning model to detect fake news using various machine learning algorithm, achieving an accuracy of more than 92%. The system is trained on a dataset of news articles that have been preprocessed and count vectorized.</p>
+                <br />
+                <a href="https://github.com/HashamAkram18/CODXO_Fake_News_Detector" target="_blank" class="view-all-button">View on GitHub</a>
+            </div>
+                        <!-- 5th -->
+
+            <div class="box">
+                <h3>End to End Chicken Disease Classification</h3>
+                <p>This project implements a web application for classifying chicken diseases using deep learning image recognition. The application leverages Keras' pre-trained VGG-16 model built upon TensorFlow to achieve high accuracy in disease detection.</p>
+                <br />
+                <a href="https://github.com/HashamAkram18/Chicken-Disease-Classification-Project" target="_blank" class="view-all-button">View on GitHub</a>
+            </div>
+                        <!-- 6th -->
+
             <div class="box">
                 <h3>Energy Efficiency Prediction Model</h3>
                 <p>Developed a machine learning model to predict Energy Efficiency for an Indusrial company, achieving an accuracy of 92%. The project involved data cleaning, feature engineering, model training, and deployment using Flask and Docker.</p>
-                <a href="https://github.com/HashamAkram18/Energy-Efficiency-Predictor-Model" target="_blank">View on GitHub</a>
-            </div>
-            <div class="box">
-                <h3>Next Word Prediction Model</h3>
-                <p>This project aims to develop a Next Word Prediction Model using machine learning techniques to enhance text input efficiency and user experience.</p>
-                <a href="https://github.com/HashamAkram18/next_word_perdiction_model" target="_blank">View on GitHub</a>
-            </div>
-            <div class="box">
-                <h3>Recommendation System</h3>
-                <p>Built a collaborative filtering recommendation system for a streaming service. Utilized matrix factorization techniques to improve user experience by suggesting personalized content.</p>
-                <a href="https://github.com/janedoe/recommendation-system" target="_blank">View on GitHub</a>
+                <br />
+                <a href="https://github.com/HashamAkram18/Energy-Efficiency-Predictor-Model" target="_blank" class="view-all-button">View on GitHub</a>
             </div>
             <!-- Add more projects as needed -->
         </div>
+        <br />
+        <a href="all_projects.html" target="_blank" class="view-all-button">View All</a>
     </section>
+
+
+
+
 
     <section id="blog">
         <h2>Blog</h2>
         <div class="box-container">
+                        <!-- 1st -->
+
             <div class="box">
-                <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC32QvTrOBaUzsNRcbKv3IL8Qo-JJje_U-Zw&s" alt="Understanding Transformers">
+                <img src= "https://th.bing.com/th/id/OIP.WhLrrG3ThFAIYqowzoTjuQHaDK?w=328&h=149&c=7&r=0&o=5&pid=1.7" alt="Understanding Transformers">
                 <h3>Seq2seq Models</h3>
                 <p>Tracing the AI Revolution from RNN to GPT-3</p>
-                <a href="https://learnwith.campusx.in/blog/seq2seq-models-tracing-the-ai-revolution-from-rnn-to-gpt-3" target="_blank">Read more</a>
+                <br />
+                <a href="https://learnwith.campusx.in/blog/seq2seq-models-tracing-the-ai-revolution-from-rnn-to-gpt-3" target="_blank" class="view-all-button">Read more</a>
             </div>
+                        <!-- 2nd -->
+
             <div class="box">
-                <img src= "" alt="Understanding Machine Learning Algorithms">
-                <h3>Data Visualization Best Practices</h3>
-                <p>Effective data visualization is crucial for communicating insights. Learn the best practices for creating clear and impactful visualizations.</p>
-                <a href="path/to/full-blog-post.html" target="_blank">Read more</a>
+                <img src= "https://th.bing.com/th/id/OIP.rkwRtUbnX37372U7LowocwHaD3?w=311&h=180&c=7&r=0&o=5&pid=1.7" alt="Understanding Physics-informed Neural Networks">
+                <h3>Understanding Physics-informed Neural Networks</h3>
+                <p>An introductory guide to PINNs, a regularization technique incorporating ODs/PDEs as physical laws for better Convergance toward optimal solution.</p>         
+                <br />
+                <a href="https://medium.com/@theo.wolf/physics-informed-neural-networks-a-simple-tutorial-with-pytorch-f28a890b874a#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImQyZDQ0NGNmOGM1ZTNhZTgzODZkNjZhMTNhMzE2OTc2YWEzNjk5OTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTA4OTQ5MDM5MTkyMjM5ODAzNDEiLCJlbWFpbCI6Imhhc2hhbWFrcmFtNTBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5iZiI6MTcyMzkxNDQwNCwibmFtZSI6Ikhhc2hhbSBBa3JhbSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NMSFhJbFhSdU1GZjRaS1NOUVRPdXpPaFhlRUlsTF9iYmRxbnB4Y2ttQjJMdXR5UVdVeD1zOTYtYyIsImdpdmVuX25hbWUiOiJIYXNoYW0iLCJmYW1pbHlfbmFtZSI6IkFrcmFtIiwiaWF0IjoxNzIzOTE0NzA0LCJleHAiOjE3MjM5MTgzMDQsImp0aSI6ImIyOWM2MTMyODg1NzJmYWJiNTZkZjIyZWM2ZDc3MzliOWExN2U4ZmIifQ.bWL_IrARRDcSuUuTdD-l-lMKygrixkzNbL8d451BsoC_R_izsc9UtR4M-hvniJay2WLxa7a-Vvs3l7GdPHLf_1eWspbnG7291NX5slPJGJHSsrG4nELrqK-aGoTBNyC-ccYy__fku7M2ozyAC0MYiT8i4U5pzawGj2SZwOcuDUj-nmUb5G_eiVXkO3OeTwnD9e7w_FmShMkfmPa46x0tLx8kQD1lfdPG5yf_hntvjPquHvjpUgpi2cQsdlbbeUpxjFL2MjBwR0_EXPDa3lFp8N8hItWb0w84EK-mGLRjcgx6MC5GBr0Uur_kFGRALlRCAhIezBF7FpB_v9s_J9YgEg" target="_blank" class="view-all-button">Read more</a>
             </div>
+                        <!-- 3rd -->
+
             <div class="box">
                 <img src= "" alt="Understanding Machine Learning Algorithms">
                 <h3>Deploying Machine Learning Models</h3>
-                <p>Deployment is a critical step in making machine learning models accessible. This post covers various deployment strategies and tools.</p>
-                <a href="path/to/full-blog-post.html" target="_blank">Read more</a>
+                <p>Deployment is a critical step in making machine learning models accessible. This post covers various deployment strategies and tools.</p>    
+                <br />
+                <a href="path/to/full-blog-post.html" target="_blank" class="view-all-button">Read more</a>
             </div>
             <!-- Add more blog posts as needed -->
         </div>
     </section>
 
+
+
+
     <section id="certifications">
         <h2>Certifications</h2>
         <div class="box-container">
+            
+            <div class="box">
+                <img src="https://raw.githubusercontent.com/HashamAkram18/HashamAkram18/main/Coursera%20Deep%20Learning%20Specialization-1.png" alt="Certification 4 Image">
+                <br />
+                <h3>Deep Learning Specialization</h3>
+                <p>Description of the certification.</p>
+            </div>
+            <div class="box">
+                <img src="https://raw.githubusercontent.com/HashamAkram18/HashamAkram18/main/Coursera%20Machine%20Learning%20Specialization%207HGT6BJNQW38-1.png" alt="Certification 5 Image">
+                <br />
+                <h3>Machine Learning Specialization</h3>
+                <p>Description of the certification.</p>
+            </div>
+            <div class="box">
+                <img src="https://raw.githubusercontent.com/HashamAkram18/HashamAkram18/main/Coursera%20AstroTech%20The%20Science%20and%20Technology%20behind%20Astronomical%20Discovery-1.png" alt="Certification 6 Image">
+                <br />
+                <h3>AstroTech: The Science and Technology behind Astronomical Discovery</h3>
+                <p>Explored astronomical technologies and scientific methods.</p>
+            </div>
             <div class="box">
                 <img src="https://raw.githubusercontent.com/HashamAkram18/HashamAkram18/main/CodeSoft_ML_Certification_page-0001.jpg" alt="Certification 1 Image">
                 <h3>Machine Learning Engineer at CodeSoft</h3>
@@ -113,36 +220,24 @@
                     SMS/Email Spam Classification Model<br>
                     Fraudulent Transaction Prediction Model<br>
                 </p>
-                
             </div>
             <div class="box">
                 <img src="https://raw.githubusercontent.com/HashamAkram18/HashamAkram18/main/iNeuron%20SEEP%20caertificate-1.png" alt="Certification 2 Image">
+                <br />
                 <h3>Data Scientist at iNeuron.ai</h3>
                 <p>End-to-End Structural Energy Efficiency prediction Modelling and Evaluation</p>
             </div>
             <div class="box">
                 <img src="https://raw.githubusercontent.com/HashamAkram18/HashamAkram18/main/Coursera%20Data%20Driven%20Astronomy-1.png" alt="Certification 3 Image">
+                <br />
                 <h3>Data-Driven Astronomy</h3>
                 <p>Learned data analysis techniques for astronomical research.</p>
-            </div>
-            <div class="box">
-                <img src="https://raw.githubusercontent.com/HashamAkram18/HashamAkram18/main/Coursera%20Deep%20Learning%20Specialization-1.png" alt="Certification 4 Image">
-                <h3>Deep Learning Specialization</h3>
-                <p>Description of the certification.</p>
-            </div>
-            <div class="box">
-                <img src="https://raw.githubusercontent.com/HashamAkram18/HashamAkram18/main/Coursera%20Machine%20Learning%20Specialization%207HGT6BJNQW38-1.png" alt="Certification 5 Image">
-                <h3>Machine Learning Specialization</h3>
-                <p>Description of the certification.</p>
-            </div>
-            <div class="box">
-                <img src="https://raw.githubusercontent.com/HashamAkram18/HashamAkram18/main/Coursera%20AstroTech%20The%20Science%20and%20Technology%20behind%20Astronomical%20Discovery-1.png" alt="Certification 6 Image">
-                <h3>AstroTech: The Science and Technology behind Astronomical Discovery</h3>
-                <p>Explored astronomical technologies and scientific methods.</p>
             </div>
             <!-- Add more certifications as needed -->
         </div>
     </section>
+
+
     
 
     <section id="contact">
@@ -165,6 +260,6 @@
         <p>&copy; 2024 Hasham Akram. All rights reserved.</p>
     </footer>
 
-    <script src="CG_Javascript.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>

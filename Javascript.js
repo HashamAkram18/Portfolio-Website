@@ -15,3 +15,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     event.preventDefault();
     alert('Thank you for your message! I will get back to you soon.');
 });
+
+document.querySelector('.icons a').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    window.open('resume.html', '_blank'); // Open the resume in a new tab
+});

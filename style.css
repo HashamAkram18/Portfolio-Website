@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #114a57;
+    background: linear-gradient(to bottom, #3da399, #3cb2c2f8, #216ee0);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    padding: 20px 0;
+}
+
+.container-left {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+.container-right {
+    float: right;
+    width: 50%;
+    padding: 20px;
+}
+
+.flex-container {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-item {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0ad4df;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 20px;
+}
+
+.icons a {
+    color: #bbb;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.icons a:hover {
+    color: aqua;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3em;
+    color: aqua;;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#about h2 {
+    font-size: 2em;
+    color: aqua;; 
+    text-shadow: 2px 2px 4px #000;
+}
+#projects h2 {
+    font-size: 2em;
+    color: aqua;;
+    text-shadow: 2px 2px 4px #000;
+}
+#certifications h2 {
+    font-size: 2em;
+    color: aqua;;
+    text-shadow: 2px 2px 4px #000;
+}
+#contact h2 {
+    font-size: 2em;
+    color: aqua;;
+    text-shadow: 2px 2px 4px #000;
+}
+#blog h2 {
+    font-size: 2em;
+    color: aqua;;
+    text-shadow: 2px 2px 4px #000;
+}
+#resume h2  {
+    font-size: 2em;
+    color: aqua;;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#MachineLearningProjects h2 {
+    font-size: 2em;
+    color: aqua;;
+    text-shadow: 2px 2px 4px #000;
+}
+#DeepLearningProjects h2 {
+    font-size: 2em;
+    color: aqua;;
+    text-shadow: 2px 2px 4px #000;
+}
+#GenerativeAIProjects h2 {
+    font-size: 2em;
+    color: aqua;;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    transition: background 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns the content to the start of the box */
+    justify-content: flex-start; /* Aligns the content to the top of the box */
+}
+
+.box:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-10px);
+}
+
+.box img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.box h3 {
+    margin-top: 10px;
+}
+
+.box a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.box a:hover {
+    color: var(--link-hover-color);
+}
+
+:root {
+    --link-color: #07345a ;
+    --link-hover-color: aqua;
+}
+
+.view-all-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    margin-top: auto;
+    color: var(--link-hover-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.view-all-button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+
+.circular-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(169, 240, 240);
+    color: #fff;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    background: rgb(255, 255, 255);
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+footer {
+    background: linear-gradient(to right, #70b6d4f8, #557cb6);
+    text-align: center;
+    padding: 20px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+}
