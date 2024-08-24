@@ -251,7 +251,7 @@ form button {
     border: none;
     border-radius: 5px;
     background: linear-gradient(to right, #00c6ff, #0072ff);
-    color: #000000;
+    color: #0a0909;
     cursor: pointer;
     transition: background 0.3s;
 }
