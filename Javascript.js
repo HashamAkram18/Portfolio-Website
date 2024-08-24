@@ -11,28 +11,26 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    var form = event.target;
-
-    // Create a FormData object to capture form data
-    var formData = new FormData(form);
-
-    // Send the form data to Formspree using fetch
+    event.preventDefault(); // Prevent the default form submission
+    
+    const form = event.target;
     fetch(form.action, {
         method: form.method,
-        body: formData,
+        body: new FormData(form),
         headers: {
             'Accept': 'application/json'
         }
     }).then(response => {
         if (response.ok) {
             alert('Message sent successfully!');
-            form.reset(); // Clear the form
+            form.reset(); // Optionally reset the form fields
         } else {
-            alert('Oops! Something went wrong.');
+            response.json().then(data => {
+                alert('Oops! There was a problem submitting your form.');
+            });
         }
     }).catch(error => {
-        alert('Oops! Something went wrong.');
+        alert('Oops! There was a problem submitting your form.');
     });
 });
 
