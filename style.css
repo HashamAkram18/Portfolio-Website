@@ -237,7 +237,7 @@ form textarea {
     border: none;
     border-radius: 5px;
     background: rgb(169, 240, 240);
-    color: #fff;
+    color: #000000;
 }
 
 form input:focus,
@@ -251,7 +251,7 @@ form button {
     border: none;
     border-radius: 5px;
     background: linear-gradient(to right, #00c6ff, #0072ff);
-    color: #fff;
+    color: #000000;
     cursor: pointer;
     transition: background 0.3s;
 }
