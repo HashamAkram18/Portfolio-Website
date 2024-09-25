@@ -163,8 +163,9 @@ section {
 }
 
 .box:hover {
-    background: rgba(2, 235, 243, 0.925);
-    transform: translateY(-10px);
+    background-color: #27e1ee; /* Change the background color as desired */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    transform: scale(1.05); /* Apply a scaling effect */
 }
 
 .box img {
