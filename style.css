@@ -148,6 +148,13 @@ section {
     gap: 20px;
 }
 
+#about .box {
+    width: 1600px; /* Adjust the width as per your requirement */
+    height: auto; /* Adjust the height as per your requirement */
+    padding: 20px; /* Adjust the padding as per your requirement */
+    box-sizing: border-box; /* This ensures the padding is included in the width and height */
+}
+
 .box {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -283,3 +290,52 @@ html {
     padding: 60px 20px;
     text-align: center;
 }
+
+
+
+/* =================================================================
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+    /* Adjust the styles for smaller screens here */
+    .box {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Styles for tablet devices */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    /* Adjust the styles for tablet screens here */
+    .box {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Styles for desktop devices */
+  @media only screen and (min-width: 901px) {
+    /* Adjust the styles for larger screens here */
+    .box {
+      width: 33.33%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Styles for landscape orientation */
+  @media only screen and (orientation: landscape) {
+    /* Adjust the styles for landscape orientation here */
+    .box {
+      width: 30%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Styles for portrait orientation */
+  @media only screen and (orientation: portrait) {
+    /* Adjust the styles for portrait orientation here */
+    .box {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  /* =====================================================================
