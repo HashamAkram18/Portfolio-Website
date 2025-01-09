@@ -10,13 +10,13 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #114a57;
-    background: linear-gradient(to bottom, #3da399, #3cb2c2f8, #216ee0);
+    background: linear-gradient(to bottom,#DFF2EB,#B9E5E8);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: linear-gradient(to right, #1f4037, #99f2c8);
+    background: linear-gradient(to right, #DFF2EB,#B9E5E8);
     padding: 20px 0;
 }
 
@@ -56,13 +56,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #4A628A; 
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #0ad4df;
+    color: #7AB2D3;
 }
 
 .icons {
@@ -80,7 +80,7 @@ nav ul li a:hover {
 }
 
 .icons a:hover {
-    color: aqua;
+    color: #213555;
 }
 
 section {
@@ -90,55 +90,55 @@ section {
 
 #home h1 {
     font-size: 3em;
-    color: aqua;;
-    text-shadow: 2px 2px 4px #000;
+    color: #213555;;
+    /* text-shadow: 2px 2px 4px #000; */
 }
 
 #about h2 {
     font-size: 2em;
-    color: aqua;; 
-    text-shadow: 2px 2px 4px #000;
+    color: #213555; 
+    /* text-shadow: 2px 2px 4px #000; */
 }
 #projects h2 {
     font-size: 2em;
-    color: aqua;;
-    text-shadow: 2px 2px 4px #000;
+    color: #213555;;
+    /* text-shadow: 2px 2px 4px #000; */
 }
 #certifications h2 {
     font-size: 2em;
-    color: aqua;;
-    text-shadow: 2px 2px 4px #000;
+    color:#213555;;
+    /* text-shadow: 2px 2px 4px #000; */
 }
 #contact h2 {
     font-size: 2em;
-    color: aqua;;
-    text-shadow: 2px 2px 4px #000;
+    color:#213555;;
+    /* text-shadow: 2px 2px 4px #000; */
 }
 #blog h2 {
     font-size: 2em;
-    color: aqua;;
-    text-shadow: 2px 2px 4px #000;
+    color: #213555;;
+    /* text-shadow: 2px 2px 4px #000; */
 }
 #resume h2  {
     font-size: 2em;
-    color: aqua;;
-    text-shadow: 2px 2px 4px #000;
+    color: #213555;;
+    /* text-shadow: 2px 2px 4px #000; */
 }
 
 #MachineLearningProjects h2 {
     font-size: 2em;
-    color: aqua;;
-    text-shadow: 2px 2px 4px #000;
+    color: #213555;;
+    /* text-shadow: 2px 2px 4px #000; */
 }
 #DeepLearningProjects h2 {
     font-size: 2em;
-    color: aqua;;
-    text-shadow: 2px 2px 4px #000;
+    color: #213555;;
+    /* text-shadow: 2px 2px 4px #000; */
 }
 #GenerativeAIProjects h2 {
     font-size: 2em;
-    color: aqua;;
-    text-shadow: 2px 2px 4px #000;
+    color: #213555;;
+    /* text-shadow: 2px 2px 4px #000; */
 }
 
 .box-container {
@@ -170,7 +170,7 @@ section {
 }
 
 .box:hover {
-    background-color: #27e1ee; /* Change the background color as desired */
+    background-color: #B9E5E8; /* Change the background color as desired */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
     transform: scale(1.05); /* Apply a scaling effect */
 }
@@ -195,24 +195,24 @@ section {
 }
 
 :root {
-    --link-color: #07345a ;
-    --link-hover-color: aqua;
+    --link-color:#4A628A ;
+    --link-hover-color:  #2a94d1 ;
 }
 
 .view-all-button {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
-    background: linear-gradient(to right, #00c6ff, #0072ff);
+    background: linear-gradient(to right, #B9E5E8,#DFF2EB);
     margin-top: auto;
-    color: var(--link-hover-color);
+    color: var(--link-hover-color);   
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s ease;
 }
 
 .view-all-button:hover {
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right,#DFF2EB, #B9E5E8);
 }
 
 .button-container {
@@ -221,7 +221,7 @@ section {
     gap: 15px;
     align-items: flex-end;
     margin-bottom: 1px;
-}
+}  
 
 
 .circular-image {
@@ -252,7 +252,7 @@ form textarea {
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
-    background: rgb(169, 240, 240);
+    background: rgb(239, 253, 255);
     color: #000000;
 }
 
@@ -266,18 +266,19 @@ form button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(to right, #00c6ff, #0072ff);
-    color: #0a0909;
+    background: linear-gradient(to right, #DFF2EB,#B9E5E8);
+    color: var(--link-color); 
+    font-weight: bold;  
     cursor: pointer;
     transition: background 0.3s;
 }
 
 form button:hover {
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right,#B9E5E8, #DFF2EB);
 }
 
 footer {
-    background: linear-gradient(to right, #70b6d4f8, #557cb6);
+    background: linear-gradient(to right,#DFF2EB, #B9E5E8);
     text-align: center;
     padding: 20px 0;
 }
