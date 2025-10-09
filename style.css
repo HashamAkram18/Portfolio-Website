@@ -8,16 +8,22 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #114a57;
-    background: linear-gradient(to bottom,#DFF2EB,#B9E5E8);
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #494949;
+    background: linear-gradient(135deg, #fffdf6 0%, #faf6e9 50%, #ece8d9 100%);
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(to right, #DFF2EB,#B9E5E8);
+    background: linear-gradient(135deg, rgba(255, 253, 246, 0.95), rgba(250, 246, 233, 0.95));
+    backdrop-filter: blur(10px);
     padding: 20px 0;
+    box-shadow: 0 2px 20px rgba(73, 73, 73, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .container-left {
@@ -56,13 +62,20 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #4A628A; 
-    font-weight: bold;
-    transition: color 0.3s;
+    color: #494949; 
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 nav ul li a:hover {
-    color: #7AB2D3;
+    color: white;
+    background: linear-gradient(135deg, #494949, #2c2c2c);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(73, 73, 73, 0.4);
 }
 
 .icons {
@@ -90,39 +103,106 @@ section {
 
 #home h1 {
     font-size: 3em;
-    color: #213555;;
-    /* text-shadow: 2px 2px 4px #000; */
+    color: #494949;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 #about h2 {
     font-size: 2em;
-    color: #213555; 
-    /* text-shadow: 2px 2px 4px #000; */
+    color: #494949; 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 #projects h2 {
     font-size: 2em;
-    color: #213555;;
-    /* text-shadow: 2px 2px 4px #000; */
+    color: #494949;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 #certifications h2 {
     font-size: 2em;
-    color:#213555;;
-    /* text-shadow: 2px 2px 4px #000; */
+    color: #494949;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 #contact h2 {
     font-size: 2em;
-    color:#213555;;
-    /* text-shadow: 2px 2px 4px #000; */
+    color: #494949;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 #blog h2 {
     font-size: 2em;
-    color: #213555;;
-    /* text-shadow: 2px 2px 4px #000; */
+    color: #494949;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 #resume h2  {
     font-size: 2em;
-    color: #213555;;
-    /* text-shadow: 2px 2px 4px #000; */
+    color: #494949;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+#skills h2 {
+    font-size: 2em;
+    color: #494949;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category h3 {
+    color: #494949;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, #faf6e9, #ece8d9);
+    color: #494949;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(73, 73, 73, 0.2);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(73, 73, 73, 0.2);
+    cursor: default;
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #494949, #2c2c2c);
+    color: white;
+    box-shadow: 0 6px 20px rgba(73, 73, 73, 0.4);
 }
 
 #MachineLearningProjects h2 {
@@ -156,23 +236,27 @@ section {
 }
 
 .box {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    margin: 15px;
+    border-radius: 15px;
     width: calc(33.333% - 40px);
     box-sizing: border-box;
-    transition: background 0.3s, transform 0.3s;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Aligns the content to the start of the box */
-    justify-content: flex-start; /* Aligns the content to the top of the box */
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .box:hover {
-    background-color: #B9E5E8; /* Change the background color as desired */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-    transform: scale(1.05); /* Apply a scaling effect */
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
 }
 
 .box img {
@@ -190,29 +274,39 @@ section {
     transition: color 0.3s;
 }
 
-.box a:hover {
+.box a:hover:not(.view-all-button) {
     color: var(--link-hover-color);
 }
 
 :root {
-    --link-color:#4A628A ;
-    --link-hover-color:  #2a94d1 ;
+    --link-color: #494949;
+    --link-hover-color: #2c2c2c;
+    --primary-color: #fffdf6;
+    --secondary-color: #faf6e9;
+    --accent-color: #ece8d9;
+    --dark-color: #494949;
 }
 
 .view-all-button {
     display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background: linear-gradient(to right, #B9E5E8,#DFF2EB);
+    padding: 12px 24px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #faf6e9, #ece8d9);
     margin-top: auto;
-    color: var(--link-hover-color);   
+    color: #494949;   
     text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(73, 73, 73, 0.2);
+    border: 1px solid rgba(73, 73, 73, 0.2);
+    cursor: pointer;
 }
 
 .view-all-button:hover {
-    background: linear-gradient(to right,#DFF2EB, #B9E5E8);
+    background: linear-gradient(135deg, #494949, #2c2c2c) !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(73, 73, 73, 0.4);
 }
 
 .button-container {
@@ -225,10 +319,11 @@ section {
 
 
 .circular-image {
-    width: 180px;
-    height: 180px;
+    width: 220px;        /* Slightly larger */
+    height: 220px;       /* Slightly larger */
     border-radius: 50%;
     object-fit: cover;
+    max-width: 100%;     /* Responsive on mobile */
 }
 
 form {
@@ -262,25 +357,15 @@ form textarea:focus {
     background: rgb(255, 255, 255);
 }
 
-form button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(to right, #DFF2EB,#B9E5E8);
-    color: var(--link-color); 
-    font-weight: bold;  
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-form button:hover {
-    background: linear-gradient(to right,#B9E5E8, #DFF2EB);
-}
+/* Form button now uses view-all-button class - styling removed to avoid conflicts */
 
 footer {
-    background: linear-gradient(to right,#DFF2EB, #B9E5E8);
+    background: linear-gradient(135deg, #faf6e9, #ece8d9);
     text-align: center;
     padding: 20px 0;
+    color: #494949;
+    font-weight: 600;
+    box-shadow: 0 -2px 20px rgba(73, 73, 73, 0.1);
 }
 
 html {
