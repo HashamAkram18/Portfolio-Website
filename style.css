@@ -145,6 +145,98 @@ section {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
+#experience h2 {
+    font-size: 2em;
+    color: #494949;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.experience-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.experience-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.experience-header h3 {
+    color: #494949;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.experience-header h4 {
+    color: #494949;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0;
+    font-style: italic;
+}
+
+.experience-date {
+    background: linear-gradient(135deg, #faf6e9, #ece8d9);
+    color: #494949;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9em;
+    box-shadow: 0 4px 15px rgba(73, 73, 73, 0.2);
+}
+
+.experience-content p {
+    color: #494949;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.experience-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-content li {
+    color: #494949;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.experience-content li:before {
+    content: "▶";
+    color: #494949;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
