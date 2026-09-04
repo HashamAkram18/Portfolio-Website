@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhysML Invos</title>
+    <meta name="description" content="Hasham Akram — AI/ML Engineer & Researcher specializing in NLP, LLMs, RAG Systems, Computer Vision, and MLOps.">
+    <meta property="og:title" content="Hasham Akram | AI/ML Engineer & Researcher">
+    <meta property="og:description" content="AI/ML Engineer specializing in NLP, LLMs, RAG systems, and Computer Vision. Currently at Silicon Nexus & Sprouto Groups.">
+    <title>Hasham Akram | AI/ML Engineer &amp; Researcher</title>
     <link rel="icon" href="image/Screenshot_2024-08-27_130541-removebg-preview.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
 <body>
+    <!-- Scroll progress bar -->
+    <div id="scroll-progress"></div>
+
     <header>
         <nav>
-            <ul>
+            <div class="nav-logo">
+                <span class="logo-badge">HA</span>
+                <span class="logo-name">Hasham Akram</span>
+            </div>
+            <ul id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -22,24 +34,29 @@
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul> 
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </header>
     
-    <section>
+    <section id="home" class="hero-section">
+        <canvas id="hero-canvas"></canvas>
         <div class="container-left">
-            <section id="home">
-                <h1 style="color: #213555;">PhyML Invos</h1><br>
-                <h2>Hi, I'm <strong><span style="color: #213555;">Hasham Akram</span></strong>, a Data Scientist and ML Engineer.</h2>
-            </section>
+            <span class="hero-tag">AI / ML Engineer &amp; Researcher</span>
+            <h1 class="hero-name">Hasham<br>Akram</h1>
+            <p class="hero-subtitle">
+                <span id="typed-text"></span><span class="typing-cursor">|</span>
+            </p>
+            <p class="hero-tagline">Turning raw data into intelligence — from Physics to Production.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="image/Hasham_Resume_OL_V07_0_.pdf" target="_blank" class="btn-secondary">Download CV</a>
+            </div>
         </div>
-        
         <div class="container-right">
-            <section id="home">
-                <img src="image\Screenshot_2024-03-16_162926-removebg-preview (1).png" alt="Hero Image" class="circular-image">
-    
-            </section>
-            <!-- Add content for the right container here -->
+            <img src="image\Screenshot_2024-03-16_162926-removebg-preview (1).png" alt="Hasham Akram - AI/ML Engineer" class="circular-image">
         </div>
     </section>
     
@@ -77,7 +94,25 @@
                         </p>
                     </div>
                 </div>
-                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="90">0</span><span class="stat-suffix">%+</span>
+                        <span class="stat-label">Avg Model Accuracy</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">ML Domains</span>
+                    </div>
+                </div>
+
                 <br/>
                 <h3>Feel free to connect</h3>
 
@@ -171,8 +206,22 @@
                     <span class="skill-tag">Generative AI</span>
                     <span class="skill-tag">LLMs</span>
                     <span class="skill-tag">MLOps</span>
-                    <!-- <span class="skill-tag">Physics-Informed ML</span>
-                    <span class="skill-tag">Astrophysics</span> -->
+                    <span class="skill-tag">Physics-Informed ML</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>LLM &amp; GenAI Stack</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">LangChain</span>
+                    <span class="skill-tag">LangGraph</span>
+                    <span class="skill-tag">HuggingFace</span>
+                    <span class="skill-tag">Pinecone</span>
+                    <span class="skill-tag">Amazon Bedrock</span>
+                    <span class="skill-tag">QLoRA / PEFT</span>
+                    <span class="skill-tag">BERT / Gemma</span>
+                    <span class="skill-tag">RAG Systems</span>
+                    <span class="skill-tag">Streamlit</span>
                 </div>
             </div>
         </div>
@@ -266,10 +315,8 @@
     <section id="resume">
         <h2>Resume</h2>
         <div class="icons">
-            <a href="resume.html" target="_blank">
-                <a href="image\Hasham_Resume_OL_V07_0_.pdf" target="_blank">
-                    <i class="fas fa-file-alt"></i> View Here ...
-                </a>
+            <a id="resume-link" href="image/Hasham_Resume_OL_V07_0_.pdf" target="_blank">
+                <i class="fas fa-file-alt"></i> View Here ...
             </a>
         </div>
     </section>
@@ -281,42 +328,63 @@
 
             <div class="box">
                 <h3>Translation App Using Seq2Seq Attention PyTorch Model</h3>
-                <p>an English-to-Urdu translation application built using a Sequence-to-Sequence (Seq2Seq) model with Gated Recurrent Units (GRU) and Bahdanau Attention mechanism.</p>
-                <br />
+                <p>An English-to-Urdu translation application built using a Sequence-to-Sequence (Seq2Seq) model with GRU and Bahdanau Attention mechanism.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">NLP</span>
+                    <span class="proj-tag nlp">Seq2Seq</span>
+                    <span class="proj-tag nlp">PyTorch</span>
+                    <span class="proj-tag nlp">GRU</span>
+                    <span class="proj-tag nlp">Attention</span>
+                </div>
                 <div class="button-container">
                     <a href="https://github.com/HashamAkram18/CODXO_Translation_App_Using_Seq2Seq_Attention_PyTorchModel" target="_blank" class="view-all-button">View on GitHub</a>
-                    <a href="https://www.linkedin.com/posts/hasham-akram-32a1701a7_machinelearning-nlp-deeplearning-activity-7230233319525777408-8w52?utm_source=share&utm_medium=member_desktop" target="_blank" class="view-all-button">View demo</a>
+                    <a href="https://www.linkedin.com/posts/hasham-akram-32a1701a7_machinelearning-nlp-deeplearning-activity-7230233319525777408-8w52?utm_source=share&utm_medium=member_desktop" target="_blank" class="view-all-button">View Demo</a>
                 </div>
             </div>
                         <!-- 2nd -->
 
             <div class="box">
                 <h3>Next Word Prediction Model</h3>
-                <p>This project aims to develop a Next Word Prediction Model using stacked Bidirectiona LSTMs and GRU to enhance text input efficiency and user experience.</p>
-                <br />
-                <br />
-                <br />
-
+                <p>A Next Word Prediction Model using stacked Bidirectional LSTMs and GRU layers to enhance text input efficiency and user experience.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">NLP</span>
+                    <span class="proj-tag nlp">Bi-LSTM</span>
+                    <span class="proj-tag nlp">GRU</span>
+                    <span class="proj-tag nlp">PyTorch</span>
+                    <span class="proj-tag nlp">Deep Learning</span>
+                </div>
                 <div class="button-container">
                     <a href="https://github.com/HashamAkram18/next_word_perdiction_model" target="_blank" class="view-all-button">View on GitHub</a>
-                    <a href="https://www.linkedin.com/posts/hasham-akram-32a1701a7_nextwordprediction-nlp-deeplearning-activity-7196796968398917633-Q497?utm_source=share&utm_medium=member_desktop" target="_blank" class="view-all-button">View demo</a>
+                    <a href="https://www.linkedin.com/posts/hasham-akram-32a1701a7_nextwordprediction-nlp-deeplearning-activity-7196796968398917633-Q497?utm_source=share&utm_medium=member_desktop" target="_blank" class="view-all-button">View Demo</a>
                 </div>
             </div>
                         <!-- 3rd -->
 
             <div class="box">
                 <h3>Wheat Crop Detection using RCNN</h3>
-                <p>This project implements a Region-based Convolutional Neural Network (RCNN) model for detecting wheat crops in images. The model is designed to assist in agricultural monitoring, enabling farmers and researchers to assess crop health and density efficiently.</p>
-                <br />
+                <p>A Region-based Convolutional Neural Network (RCNN) model for detecting wheat crops in images, assisting in agricultural monitoring and crop health assessment.</p>
+                <div class="project-tags">
+                    <span class="proj-tag cv">Computer Vision</span>
+                    <span class="proj-tag cv">Fast-RCNN</span>
+                    <span class="proj-tag cv">PyTorch</span>
+                    <span class="proj-tag cv">OpenCV</span>
+                </div>
                 <div class="button-container">
                     <a href="https://github.com/HashamAkram18/CODXO_Object_Detection_System_Using_Fast_RCNN" target="_blank" class="view-all-button">View on GitHub</a>
-                    <a href="https://www.linkedin.com/posts/hasham-akram-32a1701a7_codxo-campusx-objectdetection-activity-7229890435119239171-YhRP?utm_source=share&utm_medium=member_desktop" target="_blank" class="view-all-button">View demo</a>
+                    <a href="https://www.linkedin.com/posts/hasham-akram-32a1701a7_codxo-campusx-objectdetection-activity-7229890435119239171-YhRP?utm_source=share&utm_medium=member_desktop" target="_blank" class="view-all-button">View Demo</a>
                 </div>
             </div>
                         <!-- 4th -->
             <div class="box">
                 <h3>Fake News Detection System</h3>
-                <p>Developed a machine learning model to detect fake news using various machine learning algorithm, achieving an accuracy of more than 92%. The system is trained on a dataset of news articles that have been preprocessed and count vectorized.</p>
+                <p>Machine learning model to detect fake news achieving 92%+ accuracy. Trained on news articles using NLP preprocessing and count vectorization techniques.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">NLP</span>
+                    <span class="proj-tag nlp">Scikit-learn</span>
+                    <span class="proj-tag nlp">TF-IDF</span>
+                    <span class="proj-tag nlp">Classification</span>
+                    <span class="proj-tag nlp">Python</span>
+                </div>
                 <br />
                 <div class="button-container">
                     <a href="https://github.com/HashamAkram18/CODXO_Fake_News_Detector" target="_blank" class="view-all-button">View on GitHub</a>
@@ -326,24 +394,31 @@
                         <!-- 5th -->
 
             <div class="box">
-                <h3>End to End Chicken Disease Classification</h3>
-                <p>This project implements a web application for classifying chicken diseases using deep learning image recognition. The application leverages Keras' pre-trained VGG-16 model built upon TensorFlow to achieve high accuracy in disease detection.</p>
-                <br />
+                <h3>Corrective RAG Compliance Pipeline</h3>
+                <p>AI-integrated compliance detection system using Django REST Framework with Corrective RAG pipelines, rule-based validation, and vector similarity querying for national organization registration workflows.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">RAG</span>
+                    <span class="proj-tag nlp">LangChain</span>
+                    <span class="proj-tag nlp">Pinecone</span>
+                    <span class="proj-tag nlp">Django</span>
+                </div>
                 <div class="button-container">
-                    <a href="https://github.com/HashamAkram18/Chicken-Disease-Classification-Project" target="_blank" class="view-all-button">View on GitHub</a>
-                    <a href="https://github.com/HashamAkram18/Chicken-Disease-Classification-Project" target="_blank" class="view-all-button">View on GitHub</a>
+                    <a href="https://github.com/HashamAkram18" target="_blank" class="view-all-button">View on GitHub</a>
                 </div>
             </div>
-                        <!-- 6th -->
 
+            <!-- 6th -->
             <div class="box">
-                <h3>Energy Efficiency Prediction Model</h3>
-                <p>Developed a machine learning model to predict Energy Efficiency for an Indusrial company, achieving an accuracy of 92%. The project involved data cleaning, feature engineering, model training, and deployment using Flask and Docker.</p>
-                <br/>
-                <br/>
+                <h3>LangGraph Social Media Automation</h3>
+                <p>Led 100% automation of social media lead-generation using LangGraph agents, reducing manual intervention by 90%. Multi-agent pipeline with tool use, memory, and conditional branching.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">LangGraph</span>
+                    <span class="proj-tag nlp">LLM Agents</span>
+                    <span class="proj-tag nlp">Python</span>
+                    <span class="proj-tag nlp">FastAPI</span>
+                </div>
                 <div class="button-container">
-                    <a href="https://github.com/HashamAkram18/Energy-Efficiency-Predictor-Model" target="_blank" class="view-all-button">View on GitHub</a>
-                    <a href="https://youtu.be/QZaWPMJsD_Y?si=fLcc1kNPdfdMpU1q" target="_blank" class="view-all-button">View demo</a>
+                    <a href="https://github.com/HashamAkram18" target="_blank" class="view-all-button">View on GitHub</a>
                 </div>
             </div>
             <!-- Add more projects as needed -->
@@ -365,34 +440,31 @@
     <section id="blog">
         <h2>Blog</h2>
         <div class="box-container">
-                        <!-- 1st -->
 
             <div class="box">
-                <img src= "https://th.bing.com/th/id/OIP.WhLrrG3ThFAIYqowzoTjuQHaDK?w=328&h=149&c=7&r=0&o=5&pid=1.7" alt="Understanding Transformers">
+                <img src="https://learnwith.campusx.in/static/campusx_blog_banner.jpg" onerror="this.style.display='none'" alt="Seq2seq Models">
                 <h3>Seq2seq Models</h3>
-                <p>Tracing the AI Revolution from RNN to GPT-3</p>
+                <p>Tracing the AI Revolution from RNN to GPT-3. A deep dive into attention mechanisms and the road to modern LLMs.</p>
                 <br />
                 <a href="https://learnwith.campusx.in/blog/seq2seq-models-tracing-the-ai-revolution-from-rnn-to-gpt-3" target="_blank" class="view-all-button">Read more</a>
             </div>
-                        <!-- 2nd -->
 
             <div class="box">
-                <img src= "https://th.bing.com/th/id/OIP.rkwRtUbnX37372U7LowocwHaD3?w=311&h=180&c=7&r=0&o=5&pid=1.7" alt="Understanding Physics-informed Neural Networks">
-                <h3>Understanding Physics-informed Neural Networks</h3>
-                <p>An introductory guide to PINNs, a regularization technique incorporating ODs/PDEs as physical laws for better Convergance toward optimal solution.</p>         
-                <br />
-                <a href="https://medium.com/@theo.wolf/physics-informed-neural-networks-a-simple-tutorial-with-pytorch-f28a890b874a#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImQyZDQ0NGNmOGM1ZTNhZTgzODZkNjZhMTNhMzE2OTc2YWEzNjk5OTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTA4OTQ5MDM5MTkyMjM5ODAzNDEiLCJlbWFpbCI6Imhhc2hhbWFrcmFtNTBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5iZiI6MTcyMzkxNDQwNCwibmFtZSI6Ikhhc2hhbSBBa3JhbSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NMSFhJbFhSdU1GZjRaS1NOUVRPdXpPaFhlRUlsTF9iYmRxbnB4Y2ttQjJMdXR5UVdVeD1zOTYtYyIsImdpdmVuX25hbWUiOiJIYXNoYW0iLCJmYW1pbHlfbmFtZSI6IkFrcmFtIiwiaWF0IjoxNzIzOTE0NzA0LCJleHAiOjE3MjM5MTgzMDQsImp0aSI6ImIyOWM2MTMyODg1NzJmYWJiNTZkZjIyZWM2ZDc3MzliOWExN2U4ZmIifQ.bWL_IrARRDcSuUuTdD-l-lMKygrixkzNbL8d451BsoC_R_izsc9UtR4M-hvniJay2WLxa7a-Vvs3l7GdPHLf_1eWspbnG7291NX5slPJGJHSsrG4nELrqK-aGoTBNyC-ccYy__fku7M2ozyAC0MYiT8i4U5pzawGj2SZwOcuDUj-nmUb5G_eiVXkO3OeTwnD9e7w_FmShMkfmPa46x0tLx8kQD1lfdPG5yf_hntvjPquHvjpUgpi2cQsdlbbeUpxjFL2MjBwR0_EXPDa3lFp8N8hItWb0w84EK-mGLRjcgx6MC5GBr0Uur_kFGRALlRCAhIezBF7FpB_v9s_J9YgEg" target="_blank" class="view-all-button">Read more</a>
-            </div>
-                        <!-- 3rd -->
-
-            <div class="box">
-                <img src= "https://benmoseley.blog/wp-content/uploads/2021/08/pinn-feature-1536x865.png" alt="A machine learning revolution in science - PINNs">
-                <h3>A machine learning revolution in science - PINNs</h3>
-                <p>So, what is a physics-informed neural network? A great Source of SciML is here.</p>    
+                <img src="https://benmoseley.blog/wp-content/uploads/2021/08/pinn-feature-1536x865.png" alt="Physics-Informed Neural Networks">
+                <h3>Physics-Informed Neural Networks</h3>
+                <p>An introductory guide to PINNs — incorporating physical laws (ODEs/PDEs) as constraints for better model convergence and generalization.</p>
                 <br />
                 <a href="https://benmoseley.blog/my-research/so-what-is-a-physics-informed-neural-network/" target="_blank" class="view-all-button">Read more</a>
             </div>
-            <!-- Add more blog posts as needed -->
+
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=400&h=200&fit=crop" alt="RAG Systems">
+                <h3>Building Production RAG Systems</h3>
+                <p>Lessons from building Corrective RAG pipelines with vector similarity search, hybrid retrieval, and rule-based validation at scale.</p>
+                <br />
+                <a href="https://medium.com/@hashamakram50" target="_blank" class="view-all-button">Read more</a>
+            </div>
+
         </div>
     </section>
 
@@ -468,8 +540,11 @@
     
 
     <footer>
-        <p>&copy; 2024 Hasham Akram. All rights reserved.</p>
+        <p>&copy; 2026 Hasham Akram. All rights reserved.</p>
     </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 
     <script src="Javascript.js"></script>
 </body>

@@ -3,126 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <meta name="description" content="All AI/ML projects by Hasham Akram — Machine Learning, Deep Learning, Generative AI, and Reinforcement Learning.">
+    <title>All Projects | Hasham Akram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Go Home</a></li>
-                <li><a href="#MachineLearningProjects">Machine Learning </a></li>
-                <li><a href="#DeepLearningProjects">Deep Learning </a></li>
-                <li><a href="#GenerativeAIProjects">GenerativeAI </a></li>
-                <li><a href="#ReinforcementLearningProjects">Reinforcement Learning </a></li>
-            </ul> 
+            <div class="nav-logo">
+                <span class="logo-badge">HA</span>
+                <span class="logo-name">Hasham Akram</span>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">&#8592; Back Home</a></li>
+                <li><a href="#MachineLearningProjects">Machine Learning</a></li>
+                <li><a href="#DeepLearningProjects">Deep Learning</a></li>
+                <li><a href="#GenerativeAIProjects">Generative AI</a></li>
+                <li><a href="#ReinforcementLearningProjects">Reinforcement Learning</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
-    </header>      
+    </header>
 
-
+    <!-- Machine Learning -->
     <section id="MachineLearningProjects">
-        <h2>Machine Learning </h2>
+        <h2>Machine Learning</h2>
         <div class="box-container">
+
             <div class="box">
                 <h3>Energy Efficiency Prediction Model</h3>
-                <p>Developed a machine learning model to predict Energy Efficiency for an Indusrial company, achieving an accuracy of 92%. The project involved data cleaning, feature engineering, model training, and deployment using Flask and Docker.</p>
-                <br />
-                <a href="https://github.com/HashamAkram18/Energy-Efficiency-Predictor-Model" target="_blank" class="view-all-button">View on GitHub</a>
+                <p>Developed a machine learning model to predict Energy Efficiency for an industrial company, achieving 92% accuracy. Involved data cleaning, feature engineering, model training, and deployment using Flask and Docker.</p>
+                <div class="project-tags">
+                    <span class="proj-tag ts">Regression</span>
+                    <span class="proj-tag ts">Scikit-learn</span>
+                    <span class="proj-tag ts">Flask</span>
+                    <span class="proj-tag ts">Docker</span>
+                    <span class="proj-tag ts">Python</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18/Energy-Efficiency-Predictor-Model" target="_blank" class="view-all-button">View on GitHub</a>
+                    <a href="https://youtu.be/QZaWPMJsD_Y?si=fLcc1kNPdfdMpU1q" target="_blank" class="view-all-button">View Demo</a>
+                </div>
             </div>
+
             <div class="box">
-                <h3>End-to-End Students Math Score Prediction. The project involved data Ingestion, data cleaning, feature engineering, model training, and deployment on AWS using Flask and Docker.</h3>
-                <p>Built an End-to-End Students Math Score Prediction model. Utilized matrix factorization techniques to improve user experience by suggesting personalized Movies.</p>
-                <br />
-                <a href="https://github.com/HashamAkram18/Student_Math_Score_Prediction_Projects" target="_blank" class="view-all-button">View on GitHub</a>
+                <h3>Student Math Score Prediction</h3>
+                <p>End-to-End ML pipeline for predicting student math scores. Includes data ingestion, cleaning, feature engineering, model training, and deployment on AWS using Flask and Docker.</p>
+                <div class="project-tags">
+                    <span class="proj-tag ts">Regression</span>
+                    <span class="proj-tag ts">XGBoost</span>
+                    <span class="proj-tag ts">Flask</span>
+                    <span class="proj-tag ts">AWS</span>
+                    <span class="proj-tag ts">Docker</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18/Student_Math_Score_Prediction_Projects" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
             </div>
+
             <div class="box">
-                <h3>Movies Recomendation System</h3>
-                <p>Built a collaborative filtering recommendation system for a streaming service. Utilized matrix factorization techniques to improve user experience by suggesting personalized Movies.</p>
-                <br />
-                <br />
-                <a href="https://github.com/janedoe/recommendation-system" target="_blank" class="view-all-button">View on GitHub</a>
+                <h3>Movies Recommendation System</h3>
+                <p>Collaborative filtering recommendation system for a streaming service. Uses matrix factorization techniques to improve user experience through personalized movie suggestions.</p>
+                <div class="project-tags">
+                    <span class="proj-tag ts">Collaborative Filtering</span>
+                    <span class="proj-tag ts">Matrix Factorization</span>
+                    <span class="proj-tag ts">Scikit-learn</span>
+                    <span class="proj-tag ts">Python</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
             </div>
+
             <div class="box">
                 <h3>Fake News Detection System</h3>
-                <p>Developed a machine learning model to detect fake news using various machine learning algorithm, achieving an accuracy of more than 92%. The system is trained on a dataset of news articles that have been preprocessed and count vectorized.</p>
-                <br />
-                <a href="https://github.com/HashamAkram18/CODXO_Fake_News_Detector" target="_blank" class="view-all-button">View on GitHub</a>
+                <p>Machine learning model to detect fake news achieving 92%+ accuracy. Trained on news articles using NLP preprocessing, TF-IDF vectorization, and multiple classification algorithms.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">NLP</span>
+                    <span class="proj-tag nlp">TF-IDF</span>
+                    <span class="proj-tag nlp">Scikit-learn</span>
+                    <span class="proj-tag nlp">Classification</span>
+                    <span class="proj-tag nlp">Python</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18/CODXO_Fake_News_Detector" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
             </div>
-        </div>    
-            <!-- Add more projects as needed -->
+
+        </div>
     </section>
 
-
-
+    <!-- Deep Learning -->
     <section id="DeepLearningProjects">
-        <h2>Deep Learning </h2>
+        <h2>Deep Learning</h2>
         <div class="box-container">
+
             <div class="box">
-                <h3>Translation App Using Seq2Seq Attention PyTorch Model</h3>
-                <p>an English-to-Urdu translation application built using a Sequence-to-Sequence (Seq2Seq) model with Gated Recurrent Units (GRU) and Bahdanau Attention mechanism.</p>
-                <br />
-                <a href="https://github.com/HashamAkram18/CODXO_Translation_App_Using_Seq2Seq_Attention_PyTorchModel" target="_blank" class="view-all-button">View on GitHub</a>
+                <h3>Translation App — Seq2Seq Attention (PyTorch)</h3>
+                <p>English-to-Urdu translation application using a Sequence-to-Sequence model with GRU encoder-decoder and Bahdanau Attention mechanism for improved alignment.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">NLP</span>
+                    <span class="proj-tag nlp">Seq2Seq</span>
+                    <span class="proj-tag nlp">GRU</span>
+                    <span class="proj-tag nlp">Attention</span>
+                    <span class="proj-tag nlp">PyTorch</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18/CODXO_Translation_App_Using_Seq2Seq_Attention_PyTorchModel" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
             </div>
+
             <div class="box">
                 <h3>Next Word Prediction Model</h3>
-                <p>This project aims to develop a Next Word Prediction Model using stacked Bidirectiona LSTMs and GRU techniques to enhance text input efficiency and user experience.</p>
-                <br />
-                <a href="https://github.com/HashamAkram18/next_word_perdiction_model" target="_blank" class="view-all-button">View on GitHub</a>
+                <p>Next Word Prediction using stacked Bidirectional LSTMs and GRU layers. Enhances text input efficiency with language model trained on real-world corpora.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">NLP</span>
+                    <span class="proj-tag nlp">Bi-LSTM</span>
+                    <span class="proj-tag nlp">GRU</span>
+                    <span class="proj-tag nlp">PyTorch</span>
+                    <span class="proj-tag nlp">Language Model</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18/next_word_perdiction_model" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
             </div>
+
             <div class="box">
-                <h3>Wheat Crop Detection using RCNN</h3>
-                <p>This project implements a Region-based Convolutional Neural Network (RCNN) model for detecting wheat crops in images. The model is designed to assist in agricultural monitoring, enabling farmers and researchers to assess crop health and density efficiently.</p>
-                <br />
-                <a href="https://github.com/HashamAkram18/CODXO_Object_Detection_System_Using_Fast_RCNN" target="_blank" class="view-all-button">View on GitHub</a>
+                <h3>Wheat Crop Detection — Fast-RCNN</h3>
+                <p>Region-based CNN (RCNN) model for detecting wheat crops in satellite and field images. Assists in agricultural monitoring and crop health density assessment.</p>
+                <div class="project-tags">
+                    <span class="proj-tag cv">Computer Vision</span>
+                    <span class="proj-tag cv">Fast-RCNN</span>
+                    <span class="proj-tag cv">PyTorch</span>
+                    <span class="proj-tag cv">OpenCV</span>
+                    <span class="proj-tag cv">Object Detection</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18/CODXO_Object_Detection_System_Using_Fast_RCNN" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
             </div>
+
             <div class="box">
-                <h3>End to End Chicken Disease Classification</h3>
-                <p>This project implements a web application for classifying chicken diseases using deep learning image recognition. The application leverages Keras' pre-trained VGG-16 model built upon TensorFlow to achieve high accuracy in disease detection.</p>
-                <br />
-                <a href="https://github.com/HashamAkram18/Chicken-Disease-Classification-Project" target="_blank" class="view-all-button">View on GitHub</a>
+                <h3>Chicken Disease Classification — VGG-16</h3>
+                <p>Web app for classifying chicken diseases using deep learning. Leverages Keras pre-trained VGG-16 on TensorFlow for transfer learning-based disease detection.</p>
+                <div class="project-tags">
+                    <span class="proj-tag cv">Computer Vision</span>
+                    <span class="proj-tag cv">VGG-16</span>
+                    <span class="proj-tag cv">TensorFlow</span>
+                    <span class="proj-tag cv">Transfer Learning</span>
+                    <span class="proj-tag cv">Keras</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18/Chicken-Disease-Classification-Project" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
             </div>
-            <!-- Add more projects as needed -->
+
         </div>
     </section>
 
+    <!-- Generative AI -->
     <section id="GenerativeAIProjects">
-        <h2>GenerativeAI </h2>
+        <h2>Generative AI</h2>
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Corrective RAG Compliance Pipeline</h3>
+                <p>AI-integrated compliance detection system using Django REST Framework with Corrective RAG pipelines, rule-based validation, and vector similarity querying for organizational registration workflows.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">RAG</span>
+                    <span class="proj-tag nlp">LangChain</span>
+                    <span class="proj-tag nlp">Pinecone</span>
+                    <span class="proj-tag nlp">Django</span>
+                    <span class="proj-tag nlp">Embeddings</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>LangGraph Social Media Automation</h3>
+                <p>100% automated social media lead-generation using LangGraph multi-agent pipeline with tool use, memory management, and conditional branching — reducing manual intervention by 90%.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">LangGraph</span>
+                    <span class="proj-tag nlp">LLM Agents</span>
+                    <span class="proj-tag nlp">Tool Use</span>
+                    <span class="proj-tag nlp">FastAPI</span>
+                    <span class="proj-tag nlp">Python</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Grammar Correction — Transformer</h3>
+                <p>Hybrid NLP pipeline for grammar and spelling correction using a pre-trained transformer model combined with a spell-checker for two-stage error correction.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">NLP</span>
+                    <span class="proj-tag nlp">Transformers</span>
+                    <span class="proj-tag nlp">HuggingFace</span>
+                    <span class="proj-tag nlp">Python</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18/CODXO_Autocorrect_Tool" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>LLM LangChain Vector Search</h3>
+                <p>Complete LLM project using Pinecone's managed vector database for semantic retrieval. Demonstrates high-performance AI with scalable embedding indexing and low-latency search.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">LangChain</span>
+                    <span class="proj-tag nlp">Pinecone</span>
+                    <span class="proj-tag nlp">Vector DB</span>
+                    <span class="proj-tag nlp">Embeddings</span>
+                    <span class="proj-tag nlp">OpenAI</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18/LLM-Langchain-Project-with-Vector-Search" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Text-to-SQL LLM App — Gemini Pro</h3>
+                <p>End-to-end LLM application using Google Gemini Pro to convert natural language queries into SQL and retrieve results directly from a structured database.</p>
+                <div class="project-tags">
+                    <span class="proj-tag nlp">Gemini Pro</span>
+                    <span class="proj-tag nlp">Text-to-SQL</span>
+                    <span class="proj-tag nlp">LLM</span>
+                    <span class="proj-tag nlp">SQL</span>
+                    <span class="proj-tag nlp">Streamlit</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18/Text-To-SQL-LLM-App" target="_blank" class="view-all-button">View on GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Reinforcement Learning -->
+    <section id="ReinforcementLearningProjects">
+        <h2>Reinforcement Learning</h2>
         <div class="box-container">
             <div class="box">
-                <h3>Grammar Correction using Transformer</h3>
-                <p>This project demonstrates how to perform grammar correction on sentences using a pre-trained transformer model and a spell checker.
-                <br> 1- Correcting grammatical errors using a pre-trained transformer<br> 2- Correcting spelling errors using a spell checker.</p>
-                <br />
-                <a href="https://github.com/HashamAkram18/CODXO_Autocorrect_Tool" target="_blank" class="view-all-button">View on GitHub</a>
+                <h3>Coming Soon</h3>
+                <p>Reinforcement learning projects are currently in development. Follow on GitHub for updates.</p>
+                <div class="project-tags">
+                    <span class="proj-tag cv">RL</span>
+                    <span class="proj-tag cv">In Progress</span>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/HashamAkram18" target="_blank" class="view-all-button">View GitHub</a>
+                </div>
             </div>
-                        <!-- 6th -->
-            <div class="box">
-                <h3>LLM Langchain Vector Search</h3>
-                <p>Efficient implementation of a complete Long-Term Memory (LLM) project using Pinecone's managed vector database. The project demonstrates how to leverage Pinecone's ease of use, scalability, and low latency to create a high-performance AI application.</p>
-                <br />
-                <a href="https://github.com/HashamAkram18/LLM-Langchain-Project-with-Vector-Search" target="_blank" class="view-all-button">View on GitHub</a>
-            </div>
-            <div class="box">
-                <h3>Text To SQL Query LLM App</h3>
-                <p>Developing an end to end LLm application using Google Gemini Pro where we will create Text To SQL LLM App and later retrieving query from sql database</p>
-                <a href="https://github.com/HashamAkram18/Text-To-SQL-LLM-App" target="_blank" class="view-all-button">View on GitHub</a>
-            </div>
-            <!-- Add more projects as needed -->
         </div>
     </section>
 
-    <div class="box-container">
-        <a href="index.html" class="view-all-button">Go Home</a>
+    <div class="box-container" style="padding: 20px 0 40px;">
+        <a href="index.html" class="view-all-button">&#8592; Back to Portfolio</a>
     </div>
-    <br/>
+
     <footer>
-        <p>&copy; 2024 Hasham Akram. All rights reserved.</p>
+        <p>&copy; 2026 Hasham Akram. All rights reserved.</p>
     </footer>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks  = document.getElementById('nav-links');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+                hamburger.classList.toggle('active');
+            });
+        }
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const t = document.querySelector(a.getAttribute('href'));
+                if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+            });
+        });
+    </script>
 </body>
-
-
-
-
-</head>
 </html>
