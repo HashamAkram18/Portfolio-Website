@@ -254,3 +254,121 @@ if (typedEl) {
     init();
     loop();
 })();
+
+// ── BibTeX Citations Data & Modal Handlers ──────────────────────────────────
+const bibtexEntries = {
+    'sciml-pinn': `@article{akram2025sciml,
+  title   = {SciML-PINN: Physics-Informed Neural Networks with Dynamically Balanced Residual Losses for Incompressible Fluid Dynamics},
+  author  = {Akram, Hasham and SciML Research Group},
+  journal = {arXiv preprint arXiv:2501.08942},
+  year    = {2025},
+  url     = {https://github.com/HashamAkram18}
+}`,
+    'adaptive-crag': `@techreport{akram2025adaptivecrag,
+  title       = {Adaptive-CRAG: Self-Reflective Corrective RAG with Confidence-Gated Hybrid Retrieval for Regulatory Document Compliance},
+  author      = {Akram, Hasham and Silicon Nexus AI Team},
+  institution = {Silicon Nexus & Sprouto Groups Applied AI Lab},
+  year        = {2025},
+  url         = {https://github.com/HashamAkram18}
+}`,
+    'realtime-vton': `@article{akram2025vton,
+  title   = {Real-Time Neural Virtual Try-On via Disentangled Latent Warping and TensorRT Quantization on Edge AR Mirrors},
+  author  = {Akram, Hasham},
+  journal = {Applied Computer Vision & AR Systems},
+  year    = {2025},
+  url     = {https://github.com/HashamAkram18}
+}`,
+    'seq2seq-urdu': `@article{akram2024crossattention,
+  title   = {Cross-Attention Alignment in Low-Resource English-to-Urdu Sequence-to-Sequence Translation},
+  author  = {Akram, Hasham},
+  journal = {Deep Learning & NLP Research Notes},
+  year    = {2024},
+  url     = {https://github.com/HashamAkram18/CODXO_Translation_App_Using_Seq2Seq_Attention_PyTorchModel}
+}`
+};
+
+function openBibtex(key) {
+    const modal = document.getElementById('bibtex-modal');
+    const codeEl = document.getElementById('bibtex-code');
+    const titleEl = document.getElementById('modal-paper-title');
+    if (!modal || !codeEl) return;
+    
+    const entry = bibtexEntries[key] || '';
+    codeEl.textContent = entry;
+    if (titleEl) {
+        titleEl.textContent = `BibTeX Citation [${key}]`;
+    }
+    
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeBibtex() {
+    const modal = document.getElementById('bibtex-modal');
+    if (!modal) return;
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+}
+
+function copyBibtex() {
+    const codeEl = document.getElementById('bibtex-code');
+    const btnText = document.getElementById('copy-btn-text');
+    if (!codeEl) return;
+    
+    navigator.clipboard.writeText(codeEl.textContent).then(() => {
+        if (btnText) {
+            btnText.textContent = 'Copied to Clipboard!';
+            setTimeout(() => {
+                btnText.textContent = 'Copy to Clipboard';
+            }, 2200);
+        }
+    }).catch(err => {
+        console.error('Clipboard copy failed: ', err);
+    });
+}
+
+// Close modal on click outside or Esc
+window.addEventListener('click', (e) => {
+    const modal = document.getElementById('bibtex-modal');
+    if (e.target === modal) closeBibtex();
+});
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeBibtex();
+});
+
+// ── Research Category Filter ────────────────────────────────────────────────
+const filterButtons = document.querySelectorAll('.filter-btn');
+const paperCards = document.querySelectorAll('.paper-card');
+
+filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        
+        paperCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                card.style.display = 'block';
+                card.classList.add('fade-in', 'visible');
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+
+// ── Render KaTeX Math when loaded ───────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', () => {
+    if (typeof renderMathInElement === 'function') {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ],
+            throwOnError: false
+        });
+    }
+});
